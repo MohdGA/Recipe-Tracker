@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+</head>
+<body>
+  <h1>Movies</h1>
+
+  <button type="submit"><a href="/movies/new">Add</a></button>
+  <ul>
+   <% allMovies.forEach((movie) => { %>
+      <img src="<%= movie.image.url %>" alt="img"> 
+      <li> <a href="/movies/<%=movie._id%>"> <%= movie.title %></a>  </li>
+      <li> <%= movie.description %> </li>
+      <li> <%= movie.price %> </li>
+      <li> <%= movie.phoneNumber %> </li>
+   <% }) %>
+  </ul>
+
+</body>
+</html>

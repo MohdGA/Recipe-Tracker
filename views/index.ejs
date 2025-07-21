@@ -6,9 +6,18 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Home Page (:</h1>
-  <p><a href="auth/sign-up">Sign Up</a></p>
-  <p><a href="/auth/sign-in">Sign In</a></p>
-  <p><a href="/auth/sign-out">Sign Out</a></p>
+  <h1>Home Page</h1>
+
+ <% if(user){ %>
+    <h3>Welcome <%= user.username %></h3>
+    <p><a href="/auth/sign-out">Sign Out</a></p>
+    <p><a href="/movies/new">Add a movie</a></p>
+  <% }else{ %>
+    <h3>Welcome guest</h3>
+    <p><a href="auth/sign-up">Sign Up</a></p>
+    <p><a href="/auth/sign-in">Sign In</a></p>
+  <% } %>
+  
+  <p><a href="/vip-lounge">Get into the VIP lounge</a></p>
 </body>
 </html>
