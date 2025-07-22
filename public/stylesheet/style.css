@@ -16,7 +16,7 @@ body{
 
 h3{
   display: flex;
-  position: relative;
+
   top: 100px;
   align-content: center;
   justify-content: center;
@@ -140,6 +140,16 @@ header{
 }
 
 .card{
-  background-color: #ffffff17;
+  background-color: #ffffff3a;
   color: white;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
 }
+
+.center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
