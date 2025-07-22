@@ -12,7 +12,7 @@
 
 		<p><strong>Description:</strong><%= foundMovie.description %></p>
 
-		<p><strong>price:</strong> <%= foundMovie.price %></p>
+		<p><strong>price:</strong>$<%= foundMovie.price %></p>
 
 		<p><strong>Phone:</strong> <%= foundMovie.phoneNumber %></p>
 
@@ -24,5 +24,8 @@
         <form  action="/movies/<%=foundMovie._id%>?_method=DELETE" method="POST">
           <button type="submit">Delete <%= foundMovie.title %></button>
         </form>
+
+        <a href="/movies/<%=foundMovie._id%>/edit">Edit <%=foundMovie.title %></a>
+        
     </div>
 </html>

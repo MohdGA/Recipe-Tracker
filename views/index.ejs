@@ -1,23 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Home Page</h1>
+<%- include('partials/header.ejs') %>
 
  <% if(user){ %>
-    <h3>Welcome <%= user.username %></h3>
-    <p><a href="/auth/sign-out">Sign Out</a></p>
-    <p><a href="/movies/new">Add a movie</a></p>
+    <h3>🎬 Welcome <%=user.username%> Track What You Watch, Love What You Discover! 🍿</h3>
+
+   <% movies.forEach((movie) => { %>
+
+    <div class="card" style="width: 18rem;">
+      <img src="<%=movie.image.url%>" class="card-img-top" alt="img pic">
+      <div class="card-body">
+        <h5 class="card-title">Name: <%=movie.title%></h5>
+        <p class="card-text">Description:<%=movie.description%></p>
+        <p class="card-text">Price:<%=movie.price%></p>
+      </div>
+    </div>
+
+   <% }) %>
+
   <% }else{ %>
-    <h3>Welcome guest</h3>
-    <p><a href="auth/sign-up">Sign Up</a></p>
-    <p><a href="/auth/sign-in">Sign In</a></p>
+    <h3>🎬 Welcome guests Track What You Watch, Love What You Discover! 🍿</h3>
   <% } %>
   
-  <p><a href="/vip-lounge">Get into the VIP lounge</a></p>
+ 
 </body>
 </html>

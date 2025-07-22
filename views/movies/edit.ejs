@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Edit <%= foundMovie.title %></title>
+	</head>
+	<body>
+     <h1><%=foundMovie.title %></h1>
+    <form action="/movies/<%=foundMovie._id%>?_method=PUT" method="POST">
+    <label for="title">Title</label>
+    <input type="text" name="title" value="<%=foundMovie.title%>" id="title" required>
+
+    <label for="description">Description</label>
+    <textarea name="description" id="description"><%=foundMovie.description%></textarea>
+
+    <label for="price">price</label>
+    <input type="number" name="price" value="<%=foundMovie.price%>" id="price">
+
+    <label for="phoneNumber">phoneNumber</label>
+    <input type="tel" name="phoneNumber" value="<%=foundMovie.phoneNumber%>" id="phoneNumber">
+
+    <label for="image">Image</label>
+    <img src="<%=foundMovie.image.url%>" alt="<%=foundMovie.title%>">
+
+    <button type="submit"></button>
+  </form>
+  <a href="/movies">
+    <div>Back to All Movies</div>
+  </a>
+	</body>
+</html>

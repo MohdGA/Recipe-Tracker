@@ -25,7 +25,9 @@ router.post('/', upload.single('image'),async (req,res) => {
 router.get('/', async (req,res) => {
   const allMovies = await movie.find();
   res.render('movies/index.ejs',{allMovies})
-})
+});
+
+
 
 router.get('/:movieId', async(req,res) => {
   const foundMovie = await movie.findById(req.params.movieId)
@@ -34,7 +36,18 @@ router.get('/:movieId', async(req,res) => {
 
 router.delete('/:moveId', async (req,res) => {
   await movie.findByIdAndDelete(req.params.moveId);
-  res.redirect('/movies')
+  res.redirect('/movies');
+});
+
+router.get('/:movieId/edit', async (req,res) => {
+  const foundMovie = await movie.findById(req.params.movieId);
+  res.render('movies/edit.ejs', {foundMovie});
+});
+
+// PUT /businesses/:id
+router.put('/:movieId', async (req, res) => {
+	await movie.findByIdAndUpdate(req.params.movieId, req.body)
+	res.redirect(`/movies/${req.params.movieId}`)
 })
 
 module.exports = router;

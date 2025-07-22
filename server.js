@@ -12,6 +12,7 @@ const movieController = require('./controllers/movieController');
 const isSignedIn = require('./middleware/isSignedIn');
 const passUserToViews = require('./middleware/pass-user');
 const morgan = require('morgan');
+const movie = require('./models/movie');
 
 
 mongoose.connect(process.env.MONGODB_URI);
@@ -34,8 +35,9 @@ app.use(session({
 
 app.use(passUserToViews);
 
-app.get('/', (req,res) => {
-  res.render('index.ejs')
+app.get('/', async(req,res) => {
+  const movies = await movie.find();
+  res.render('index.ejs', {movies})
 });
 
 app.use('/auth', userController);
