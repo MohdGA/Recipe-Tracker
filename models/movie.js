@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 const {cloudinaryStorage} = require ('multer-storage-cloudinary')
 const Schema = mongoose.Schema;
 
+
+
 const movieSchema = new mongoose.Schema({
   title:String,
   description: String,
@@ -16,10 +18,15 @@ const movieSchema = new mongoose.Schema({
       required: true
     }
   },
+  isWatched: {
+    type: Boolean,
+    default: false
+  },
   user: {
     type: Schema.Types.ObjectId,
     ref: "User"
   },
+  
 }, {timestamps: true});
 
 module.exports = mongoose.model('movies',movieSchema);

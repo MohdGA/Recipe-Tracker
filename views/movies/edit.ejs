@@ -13,7 +13,7 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-custom">
-    <a href="/" class="navbar-brand">MovieWishList</a>
+    <a href="/" class="navbar-brand">MovieWatchList</a>
   </nav>
   <main>
     <h1>Edit <%= foundMovie.title %></h1>
@@ -28,7 +28,9 @@
       <label for="price">Price</label>
       <input type="number" id="price" name="price"    value="<%= foundMovie.price %>" step="0.01" />
 
-      <label>Current Image</label>
+      <label for="isWatched">is Watched</label>
+      <input type="checkbox" name="isWatched" id="isWatched">
+
       <img src="<%= foundMovie.image.url %>" alt="<%= foundMovie.title %>" />
 
       <button type="submit">Update Movie</button>

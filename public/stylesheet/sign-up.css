@@ -1,0 +1,61 @@
+ body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    background: url('https://images.unsplash.com/photo-1595769816263-9b910be24d5f?w=1920&auto=format&fit=crop&q=80&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW92aWUlMjB0aGVhdGVyfGVufDB8fDB8fHww') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #111; /* Fallback color */
+    }
+    .signup-box {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(12px);
+      padding: 40px;
+      border-radius: 16px;
+      color: #fff;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    .signup-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    .form-control {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #fff;
+    }
+    .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .form-label {
+      font-weight: 500;
+    }
+    .btn-custom {
+      background-color: #E50914;
+      border: none;
+      width: 100%;
+      padding: 10px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #B20710;
+    }
+    .footer-text {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+    .footer-text a {
+      color: #E50914;
+      text-decoration: none;
+    }
+    .footer-text a:hover {
+      text-decoration: underline;
+    }

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const { use } = require('../controllers/userController');
+
 
 const userSchema = new mongoose.Schema({
   username: {
