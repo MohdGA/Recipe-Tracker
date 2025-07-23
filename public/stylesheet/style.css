@@ -64,7 +64,7 @@
     }
 
     .welcome-msg {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       font-size: 1.3rem;
       text-align: center;
       color: #F0E6D2;
@@ -165,7 +165,7 @@
 
     .guest-welcome {
       text-align: center;
-      margin-top: 50px;
+      margin-top: 150px;
       font-size: 1.4rem;
       font-weight: 600;
       color: #C9A76A;
