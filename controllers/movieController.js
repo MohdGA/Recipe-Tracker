@@ -54,6 +54,13 @@ router.get('/:movieId/edit', async (req,res) => {
 
 
 router.put('/:movieId', async (req, res) => {
+
+  if(req.body.isWatched === 'on'){
+    req.body.isWatched = true
+  }else{
+    req.body.isWatched = false
+  }
+
 	await Movie.findByIdAndUpdate(req.params.movieId, req.body)
 	res.redirect(`/movies/${req.params.movieId}`)
 })

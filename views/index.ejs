@@ -21,7 +21,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/">MovieWatchList</a>
+      <a class="navbar-brand" href="/">MovieWishList</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -71,6 +71,11 @@
             <div class="movie-info">
               <h5 class="movie-title">Name: <%= movie.title %></h5>
               <p class="movie-desc">Description: <%= movie.description %></p>
+              <p class="movie-desc">
+                <% if(movie.isWatched){ %>
+                  <strong>is watched:</strong> ✅
+                <% } %>
+              </p>
               <span class="movie-price">$<%= movie.price %></span>
             </div>
           </div>

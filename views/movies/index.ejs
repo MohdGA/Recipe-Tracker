@@ -30,8 +30,15 @@
           <h5><a href="/movies/<%= movie._id %>"><%= movie.title %></a></h5>
 
           <p><strong>Description:</strong> <%= movie.description %></p>
-          
+
+          <p>
+           <% if(movie.isWatched){ %>
+             <strong>is watched:</strong> ✅
+            <% } %>
+          </p>
+
           <p><strong>Price:</strong> $<%= movie.price %></p>
+      </div>
       </div>
       <% } %>
     <% }) %>
