@@ -12,7 +12,7 @@ This is a watch list movie webiste where you could add a movie to your watch lis
 👉 **here:** [https://general-assembly-app-5158da3bfc97.herokuapp.com/]
 
 👉 **Planning Materials:**
-- [User Stories](planning/user-story.md)
+- [User Stories](planning/user-story.txt)
 - [Trello Board](https://trello.com/b/6mNvSBxE/recipe-tracker)
 - [Excalidraw](/images/Excalidrew.png)
 
