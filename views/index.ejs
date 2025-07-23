@@ -70,10 +70,12 @@
             <img src="<%= movie.image.url %>" alt="<%= movie.title %>" class="movie-img" />
             <div class="movie-info">
               <h5 class="movie-title">Name: <%= movie.title %></h5>
-              <p class="movie-desc">Description: <%= movie.description %></p>
-              <p class="movie-desc">
+              <p class="movie-desc"> Description: <%= movie.description %>
+                <br>
                 <% if(movie.isWatched){ %>
-                  <strong>is watched:</strong> ✅
+                  <strong>is watched:✅</strong> 
+                <% }else{ %>
+                  <strong>is watched:✖️</strong>
                 <% } %>
               </p>
               <span class="movie-price">$<%= movie.price %></span>

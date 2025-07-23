@@ -32,9 +32,11 @@
           <p><strong>Description:</strong> <%= movie.description %></p>
 
           <p>
-           <% if(movie.isWatched){ %>
-             <strong>is watched:</strong> ✅
-            <% } %>
+         <% if(movie.isWatched){ %>
+                  <strong>is watched:</strong> ✅
+                <% }else{
+                  <strong>is watched:</strong> > ✖️
+               <% } %>
           </p>
 
           <p><strong>Price:</strong> $<%= movie.price %></p>
