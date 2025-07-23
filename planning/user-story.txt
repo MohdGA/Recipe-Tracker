@@ -1,0 +1,18 @@
+1. As a user, I want to see a landing page when I arrive at the website.
+
+2. As a user, I can sign-up as a new user at the website.
+
+3. As a user, I want to be able to sign in to my account.
+
+3. As a user, I want to see recipes when i click the home page.
+
+4. As a user, I want to add a new recipe and add to the home page.
+
+5. As a user, I want to edit a recipe.
+
+6. As a user, I want to delete a recipe from the home page.
+
+7. As a user, I want to be able to sign out of the website.
+
+ 
+Maison Élégante
