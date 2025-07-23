@@ -15,4 +15,3 @@
 7. As a user, I want to be able to sign out of the website.
 
  
-Maison Élégante
