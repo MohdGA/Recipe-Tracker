@@ -14,7 +14,7 @@ This is a watch list movie webiste where you could add a movie to your watch lis
 👉 **Planning Materials:**
 - [User Stories](planning/user-story.txt)
 - [Trello Board](https://trello.com/b/6mNvSBxE/recipe-tracker)
-- [Excalidraw](/images/Excalidrew.png)
+- [Excalidraw](public/images/Excalidrew.png)
 
 
 ## 💡 Technologies Used
