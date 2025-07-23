@@ -1,7 +1,6 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const port = 3000;
 const path = require('path');
 const mongoose = require('mongoose');
 const mongoStore = require('connect-mongo');
@@ -49,7 +48,7 @@ app.get('/vip-lounge', isSignedIn,(req,res) => {
 
 
 
-app.listen(port , () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('connected to the server');
 });
 
