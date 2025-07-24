@@ -61,9 +61,9 @@
   <!-- Main Content -->
   <main class="container">
     <% if(user){ %>
-      <h3 class="welcome-msg">
+      <h2 class="welcome-msg">
         🎬 Welcome <%= user.username %>! Track What You Watch, Love What You Discover! 🍿
-      </h3>
+      </h2>
       <section class="movies-container">
         <% movies.forEach((movie) => { %>
         <% if(movie.user._id.equals(user._id)){ %>
@@ -87,7 +87,7 @@
       </section>
     <% } else { %>
       <div class="guest-welcome">
-        🎬 Welcome guests! Track What You Watch, Love What You Discover! 🍿
+       <h2> 🎬 Welcome guests! Track What You Watch, Love What You Discover! 🍿</h2>
       </div>
     <% } %>
   </main>
