@@ -22,6 +22,9 @@ This is a watch list movie webiste where you could add a movie to your watch lis
 - EJS
 - CSS
 - JavaScript
+- Node.js
+- Express
+- MongoDB
 - Bootstrap
 
 ## 📚 Attributions
